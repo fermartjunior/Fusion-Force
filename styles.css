@@ -5,12 +5,10 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;;
-    background: linear-gradient(150deg ,black, rgb(109, 1, 85));
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(150deg, black, rgb(109, 1, 85));
     color: white;
 }
-
-
 
 .particulas {
     position: fixed;
@@ -20,17 +18,18 @@ body {
     height: 100%;
     z-index: -1;
     opacity: 0.5;
-    background: 
-    radial-gradient(circle at 10% 20%, rgb(80, 1, 80) 0%, transparent 20%),
-    radial-gradient(circle at 90% 80%, rgb(59, 0, 59), transparent 20%),
-    black}
+    background:
+        radial-gradient(circle at 10% 20%, rgb(80, 1, 80) 0%, transparent 20%),
+        radial-gradient(circle at 90% 80%, rgb(59, 0, 59), transparent 20%),
+        black;
+}
 
 .navbar {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(7, 7, 7, 0.8) ;
-    padding: 1.5rem;
+    background: rgba(7, 7, 7, 0.8);
+    padding: 1.5rem 1rem;
     z-index: 1;
 }
 
@@ -39,6 +38,7 @@ ul {
     display: flex;
     justify-content: center;
     gap: 5rem;
+    flex-wrap: wrap;
 }
 
 a {
@@ -57,21 +57,21 @@ a::after {
     bottom: 0;
     left: 0;
     background: rgb(99, 1, 99);
+    transition: width 0.5s ease;
 }
 
 a:hover::after {
     width: 100%;
-    transition: 0.5s ease;
 }
 
 .foto-logo {
     display: flex;
     justify-content: center;
-    width: 600px;
-    margin: 60px auto;
-    
+    max-width: 100%;
+    margin: 100px auto 40px;
+    padding: 0 1rem;
 }
-       
+
 .imagem {
     box-shadow: 0 0 20px purple;
     width: 300px;
@@ -79,93 +79,86 @@ a:hover::after {
     margin-top: 50px;
     border-radius: 50%;
     animation: flutuar 5s ease-in-out infinite;
+    max-width: 100%;
 }
 
 @keyframes flutuar {
     0%, 100% {
         transform: translateY(0);
     }
+
     50% {
         transform: translateY(-20px);
     }
 }
 
 .descricao {
-    width: 600px;
+    max-width: 600px;
     margin: 30px auto;
+    padding: 0 1rem;
     display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
     padding-bottom: 1.5rem;
-    margin-bottom: 30px; 
 }
 
 .subtitulo {
     margin: 40px auto;
     font-size: 28px;
+    text-align: center;
 }
 
 h1 {
     font-size: 35px;
+    text-align: center;
 }
 
 h2 {
     font-size: 28px;
+    text-align: center;
 }
 
-.caixa-sobre {
+.caixa-sobre,
+.caixa-patrocinio,
+.formulario-contato {
+    max-width: 600px;
+    width: 100%;
     margin: 30px auto;
-    width: 600px;
     text-align: center;
-    line-height: 1.5rem;
+    line-height: 1.6;
     background: rgb(3, 3, 3);
     border-radius: 20px;
     border: solid 1px rgb(63, 0, 63);
     padding: 2.5rem;
-}
-
-.caixa-patrocinio {
-    margin: 30px auto;
-    width: 600px;
-    text-align: center;
-    line-height: 1.5rem;
-    background: rgb(3, 3, 3);
-    border-radius: 20px;
-    border: solid 1px rgb(63, 0, 63);
-    padding: 2.5rem;
+    box-sizing: border-box;
 }
 
 .foto-carro {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     border-radius: 10px;
     margin: 40px auto;
     box-shadow: 0 0 20px purple;
+    display: block;
 }
 
 .daniela {
+    max-width: 100%;
+    height: auto;
     border-radius: 10px;
-    margin-top: 50px ;
+    margin-top: 50px;
     margin-bottom: 8px;
 }
 
-.formulario-contato {
-    margin: 30px auto;
-    width: 600px;
-    text-align: center;
-    background: rgb(3, 3, 3);
-    border-radius: 20px;
-    border: solid 1px rgb(63, 0, 63);
-    padding: 2.5rem;
-}
-
-.campo-form { 
-    width: 80%;
+.campo-form {
+    width: 100%;
     padding: 1rem;
     border-radius: 8px;
     background: black;
     color: white;
     outline: none;
+    border: 1px solid rgb(63, 0, 63);
 }
 
 .campo-form:focus {
@@ -183,13 +176,66 @@ h2 {
     padding: 1rem 2rem;
     border: none;
     border-radius: 8px;
-    width: 82%;
+    width: 100%;
     cursor: pointer;
     font-weight: bold;
-    transition: 0.5 ease;
+    transition: 0.5s ease;
 }
 
 .botao-form:hover {
     transform: translateY(-4px);
     box-shadow: 0 5px 15px rgb(26, 25, 25);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    ul {
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    .subtitulo {
+        font-size: 22px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .imagem {
+        width: 220px;
+        height: 220px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 1rem;
+    }
+
+    .caixa-sobre,
+    .caixa-patrocinio,
+    .formulario-contato {
+        padding: 1.5rem;
+    }
+
+    .botao-form {
+        font-size: 1rem;
+    }
+
+    .subtitulo {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
 }
