@@ -4,3 +4,4 @@ Esse é um projeto que criei para estudos, utilizando uma equipe de Automobilism
 ## Tecnologias utilizadas 
 - HTML
 - CSS
+- JavaScript
