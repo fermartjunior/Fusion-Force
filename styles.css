@@ -239,3 +239,50 @@ h2 {
         font-size: 20px;
     }
 }
+
+.menu-toggle {
+  display: none;
+  font-size: 2rem;
+  color: white;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 5rem;
+  padding: 0;
+}
+
+@media (max-width: 766px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .menu {
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    display: none;
+    padding: 1rem 0;
+    gap: 1rem;
+  }
+
+  .menu.show {
+    display: flex;
+  }
+
+  .menu li {
+    text-align: center;
+  }
+}
