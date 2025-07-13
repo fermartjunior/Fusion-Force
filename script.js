@@ -4,7 +4,7 @@ document.getElementById('contato').addEventListener('submit', function (e) {
   const nome = document.getElementById('nome').value.trim();
   const mensagem = document.getElementById('mensagem').value.trim();
 
-  if (!nome || !messagem) {
+  if (!nome || !mensagem) {
     alert('Por favor, preencha todos os campos.');
     return;
   }
