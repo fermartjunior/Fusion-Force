@@ -9,7 +9,7 @@ document.getElementById('contato').addEventListener('submit', function (e) {
     return;
   }
 
-  const numeroWhatsApp = '5514981336599'; 
+  const numeroWhatsApp = '18634441790'; 
   const texto = `Olá, meu nome é ${nome}.%0A${mensagem}`;
   const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
 
@@ -34,7 +34,7 @@ document.getElementById('contato').addEventListener('submit', function (e) {
     return;
   }
 
-  const numeroWhatsApp = '5514981336599'; // Altere para o seu número
+  const numeroWhatsApp = '18634441790'; // Altere para o seu número
   const texto = `Olá, meu nome é ${nome}.%0A${mensagem}`;
   const url = `https://wa.me/${numeroWhatsApp}?text=${encodeURIComponent(texto)}`;
 

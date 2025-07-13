@@ -187,7 +187,32 @@ h2 {
     box-shadow: 0 5px 15px rgb(26, 25, 25);
 }
 
-/* Responsividade */
+.contato-instagram {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contato-instagram a {
+    text-decoration: none;
+    color: #E1306C; /* Cor rosa do Instagram */
+    font-weight: bold;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    transition: transform 0.2s ease;
+}
+
+.contato-instagram a:hover {
+    transform: scale(1.05);
+}
+
+.icone-instagram {
+    border-radius: 8px;
+    width: 36px;
+    height: 36px;
+}
+
 @media (max-width: 768px) {
     ul {
         gap: 2rem;
