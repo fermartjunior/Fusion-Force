@@ -286,7 +286,7 @@ h2 {
   padding: 0;
 }
 
-@media (max-width: 766px) {
+@media (max-width: 769px) {
   .menu-toggle {
     display: block;
   }
