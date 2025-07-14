@@ -172,7 +172,7 @@ h2 {
 
 .botao-form {
     color: white;
-    background: linear-gradient(45deg, rgb(247, 6, 247), rgb(54, 2, 41));
+    background: linear-gradient(45deg, rgb(6, 247, 66), rgb(13, 90, 3));
     padding: 1rem 2rem;
     border: none;
     border-radius: 8px;
@@ -183,35 +183,28 @@ h2 {
 }
 
 .botao-form:hover {
-    transform: translateY(-4px);
+    transform: translateY(-3px);
     box-shadow: 0 5px 15px rgb(26, 25, 25);
 }
 
-.contato-instagram {
+.botao-inst {
+    color: white;
+    background: linear-gradient(45deg, rgb(247, 6, 247), rgb(54, 2, 41));
     margin-top: 20px;
-    text-align: center;
-}
-
-.contato-instagram a {
-    text-decoration: none;
-    color: #E1306C; /* Cor rosa do Instagram */
-    font-weight: bold;
-    font-size: 16px;
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    transition: transform 0.2s ease;
-}
-
-.contato-instagram a:hover {
-    transform: scale(1.05);
-}
-
-.icone-instagram {
+    padding: 1rem 2rem;
+    border: none;
     border-radius: 8px;
-    width: 36px;
-    height: 36px;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+    transition: 0.5s ease;
 }
+
+.botao-inst:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgb(26, 25, 25);
+}
+
 
 @media (max-width: 768px) {
     ul {
@@ -273,9 +266,8 @@ h2 {
   border: none;
   cursor: pointer;
   z-index: 2;
-  position: absolute;
-  top: 20px;
-  left: 20px;
+  top: 5px;
+  left: 10px;
 }
 
 .menu {

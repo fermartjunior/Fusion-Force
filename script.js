@@ -16,9 +16,17 @@ document.getElementById('contato').addEventListener('submit', function (e) {
   window.open(url, '_blank');
 });
 
-// Botão para mostrar/esconder o menu
+document.getElementById('enviarInst').addEventListener('click', function (e) {
+  e.preventDefault(); // Evita o envio do formulário
+
+  const linkInstagram = 'https://www.instagram.com/fusion_force_racing_team';
+
+  window.open(linkInstagram, '_blank'); // Abre em nova aba
+});
+
 document.getElementById('menu-toggle').addEventListener('click', function () {
   const menu = document.getElementById('menu');
   menu.classList.toggle('show');
 });
+
 
