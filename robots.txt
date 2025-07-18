@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://steady-blancmange-5dbdf2.netlify.app/sitemap.xml
